@@ -1,0 +1,26 @@
+#!/usr/bin/lua
+require "luci.cacheloader"
+require "luci.sgi.cgi"
+require "nixio.fs"
+
+luci.dispatcher.indexcache = "/tmp/luci-indexcache"
+
+local path = os.getenv("PATH_INFO")
+local provisioned = tonumber(luci.util.trim(luci.util.exec("fw_printenv -n mfg_provisioned")))
+local enable_admin = nixio.fs.readfile("/tmp/enable_admin")
+
+if provisioned == nil or
+                provisioned == 0 or
+                path == "/admin/minim/unprov" or
+                path == "/admin/minim/enable_admin" or
+                path == "/admin/minim/start_sshd" or
+                path == "/rpc/uci" or
+                path == "/rpc/auth" or
+                enable_admin == "1" then
+        luci.sgi.cgi.run()
+else
+        local landing = nixio.fs.readfile("/www/luci-static/resources/landing.html")
+        print("Content-type: text/html")
+        print("")
+        print(landing)
+end
