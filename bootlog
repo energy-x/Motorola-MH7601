@@ -1,0 +1,1178 @@
+----
+BTRM
+V1.3
+MEM?
+MEMP
+CACH
+CODE
+ZBSS
+MAIN
+OTP?
+OTPP
+USBT
+SNAN
+IMG?
+IMGL
+UHD?
+UHDP
+RLO?
+RLOP
+UBI?
+UBIP
+PASS
+----
+
+U-Boot SPL 2019.07 (Sep 20 2021 - 17:51:57 -0400)
+Strap register: 0x7ffffb69
+Board is non secure
+$SPL: 5.04L.02@314035 $
+Apply trim code 0x2 reg 0x8 from otp to LDO controller...
+SPI NAND ID: 0xa1 0xe4
+128 MiB, block size: 128 KiB, page size: 2048
+FFinit done
+find magic number 0x75456e76 at address 0x40000
+blob not found for magic 0xcb00cb sel 0x132f!
+FFinit find magic number 0xcb00cb at address 0x45000
+reading blob from 0x45000 offset 0x4e6c len 608
+digest sha256 mismatch
+find magic number 0xcb00cb at address 0xa6000
+reading blob from 0xa6000 offset 0x4e6c len 608
+digest sha256 OK
+FFinit find magic number 0x64447233 at address 0x20000
+reading blob from 0x20000 offset 0xc len 34264
+digest sha256 OK
+mcb selector 0x132f checksum 0x7a4f327b safe_mode 0
+
+MemsysInit hpg0_generic 3.3.1.0 20180919
+DDR3
+8529DB48 80180000 801A0000 00000000 00000000 00C0549A
+MCB rev=0x00000501 Ref ID=0x0549A Sub Bld=0x00C
+Dram Timing 13-13-13
+
+start of memsys_begin
+mc_cfg_init(): Initialize the default values on mc_cfg
+init_memc_dram_profile(): Initializing MEMC DRAM profile
+---------------------------------------------------------------
+MEMC DRAM profile (memc_dram_profile_struct) values:
+  dram_type    = DDR3
+====================================================
+PART values:
+  part_speed_grade    = 1866 CL13
+  part_size_Mbits     = 2048 (DRAM size in MegaBits)
+  part_row_bits       = 14 (number of row bits)
+  part_col_bits       = 10 (number of column bits)
+  part_ba_bits        = 3 (number of bank bits)
+  part_width_bits     = 16 (DRAM width in bits)
+NUMER OF PARTS:
+  part_num            = 1 (Number of parts)
+TOTAL values:
+  total_size_Mbits    = 2048 (DRAM size in MegaBits)
+  total_cs_bits       = 0 (number of cs bits, for dual_rank mode)
+  total_width_bits    = 16 (DRAM width in bits)
+  total_burst_bytes   = 16 (Number of bytes per DRAM access)
+  total_max_byte_addr = 0xfffffff (Maximum/last DRAM byte address)
+                        (Number of bits in total_max_byte_addr is 28)
+                        (i.e. total_max_byte_addr goes from bit 0 to bit 27)
+  ddr_2T_mode         = 0
+  ddr_hdp_mode        = 0
+  large_page          = 1
+  ddr_dual_rank       = 0
+  cs_mode             = 0
+MEMC timing (memc_dram_timing_cfg_struct) values:
+====================================================
+  MC_CHN_TIM_TIM1_0 register fields:
+    tCwl   = 9
+    tRP    = 13
+    tCL    = 13
+    tRCD   = 13
+  MC_CHN_TIM_TIM1_1 register fields:
+    tCCD_L = 4
+    tCCD   = 4
+    tRRD_L = 6
+    tRRD   = 6
+  MC_CHN_TIM_TIM1_2 register fields:
+    tFAW   = 33
+    tRTP   = 7
+    tRCr   = 45
+  MC_CHN_TIM_TIM1_3 register fields:
+    tWTR_L = 7
+    tWTR   = 7
+    tWR_L  = 14
+    tWR    = 14
+  MC_CHN_TIM_TIM2 register fields:
+    tR2R   = 0
+    tR2W   = 2
+    tW2R   = 2
+    tW2W   = 0
+    tAL    = 0
+    tRFC   = 152
+====================================================
+%1 SSC enabled
+
+Poll PHY Status register
+PHY Status= 1
+Disable Auto-Refresh
+[80180200] = 0x00000305
+End of memsys_begin
+Add/Ctl Alignment
+Coarse Adj=0x087 deg, cmd steps=0x0B8
+reg 0x801A0090 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A0094 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A0098 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A009C set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00A0 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00A4 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00A8 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00AC set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00B0 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00B4 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00B8 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00BC set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00C0 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00C4 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00C8 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00CC set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00D0 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00D4 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00D8 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00DC set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00E0 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00E4 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00E8 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00EC set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00F0 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00F4 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00F8 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A00FC set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A0100 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A0108 set to VDL 0x046 with Fine Adj=0x01 deg
+reg 0x801A010C set to VDL 0x046 with Fine Adj=0x01 deg
+HP RX TRIM
+itrim = 0x0
+lstrim = 0xA
+
+ZQ Cal HP PHY
+ R in Ohm
+ P: Finger=0x348 Term=0x78 Drv=0x28
+ N: Finger=0x300 Term=0x80 Drv=0x28
+
+PLL Ref(Hz)=0x02FAF080 UI STEPS=0x05C
+ DDR CLK(MHz)=0x39F WL CLK dly(ps)=0x0C8 bitT(ps)=0x21B VDLsize(fs)=0x16E2 CLK_V                                                            DL=0x022
+start of memc_init
+[80180004] = 0x0110061f
+[80180234] = 0x00000101
+Enable Auto-Refresh
+[80180110] = 0x11100f0e
+[80180114] = 0x15141312
+[80180118] = 0x19181716
+[8018011c] = 0x00001b1a
+[80180124] = 0x04000000
+[80180128] = 0x08070605
+[8018012c] = 0x00000a09
+[80180134] = 0x000d0c0b
+ Writing to MC_CHN_CFG_CNFG reg; data=0x00000000
+[80180100] = 0x00000000
+cfg_memc_timing_ctrl() Called
+[80180214] = 0x090d0d0d
+[80180218] = 0x04040606
+[8018021c] = 0x2100072d
+[80180220] = 0x07070e0e
+[80180224] = 0x12000098
+End of memc_init
+start of pre_shmoo
+[80180004] = 0xc110071f
+end of pre_shmoo
+
+SHMOO 28nm
+801A0000 801A0000 00000000 00020000 00000000
+
+Shmoo WL
+
+One UI Steps : 0x67
+
+auto-clk result = 016 (filter=0C steps)
+initial CLK shift = 022
+final CLK shift   = 016
+
+   00000000000000000000000000000000000000000000000000000000000000000000000000000                                                            00000000000000000000000111
+   00000000001111111111222222222233333333334444444444555555555566666666667777777                                                            77788888888889999999999000
+   01234567890123456789012345678901234567890123456789012345678901234567890123456                                                            78901234567890123456789012
+00 S-----------X----------------------------------------------------------------                                                            --------------------------
+01 S------------X---------------------------------------------------------------                                                            --------------------------
+
+Shmoo RD En
+FORCED WR ODT = 0x00001800
+ DQSN DRIVE PAD CONTROL (from) (to)
+ B0 00039AB3 00079AB3
+ B1 00039AB3 00079AB3
+B0 RISE UI=1 VDL=35 PICK UI=2 VDL=35
+B1 RISE UI=1 VDL=35 PICK UI=2 VDL=35
+   00000000000000000000000000000000000000000000000000000000000000000000000000000                                                            00000000000000000000000111
+   00000000001111111111222222222233333333334444444444555555555566666666667777777                                                            77788888888889999999999000
+   01234567890123456789012345678901234567890123456789012345678901234567890123456                                                            78901234567890123456789012
+00 --S-------------------------------------------------+X+++++++++++++++--------                                                            --------------------------
+01 --S--------------------------------------------------X+++++++++++++++--------                                                            --------------------------
+
+Shmoo RD DQ NP
+DQS :
+B0 VDL=5C ok
+B1 VDL=5C ok
+   00000000000000000000000000000000000000000000000000000000000000000000000000000                                                            00000000000000000000000111
+   00000000001111111111222222222233333333334444444444555555555566666666667777777                                                            77788888888889999999999000
+   01234567890123456789012345678901234567890123456789012345678901234567890123456                                                            78901234567890123456789012
+00 -------------------------+++++++++++++++++++++++++++++++++++++X++++++++++++++                                                            +++++++++++++++++++++++---
+01 ---------+++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++                                                            ++++++++------------------
+02 --------------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++                                                            ++++++++++++++++++--------
+03 --------------------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++                                                            ++++++++++++++------------
+04 ---------------------+++++++++++++++++++++++++++++++++++++X++++++++++++++++++                                                            ++++++++++++++++++++------
+05 ---------------+++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++                                                            +++++++++++++-------------
+06 --------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++                                                            +++++++++++++-------------
+07 ----------------+++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++                                                            +++++++++++---------------
+08 ------------------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++                                                            +++++++++++++++++++++++---
+09 ------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++                                                            ++++++++++----------------
+10 --------------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++                                                            ++++++++++++++++++--------
+11 ------------++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++                                                            ++++++++------------------
+12 --------------------++++++++++++++++++++++++++++++++++++++X++++++++++++++++++                                                            ++++++++++++++++++++------
+13 ------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++                                                            ++++++++++----------------
+14 -----------------+++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++                                                            ++++++++++++++++----------
+15 ----------------++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++                                                            +++++++++++++-------------
+
+Shmoo RD DQ P
+   00000000000000000000000000000000000000000000000000000000000000000000000000000                                                            00000000000000000000000111
+   00000000001111111111222222222233333333334444444444555555555566666666667777777                                                            77788888888889999999999000
+   01234567890123456789012345678901234567890123456789012345678901234567890123456                                                            78901234567890123456789012
+00 --------------------------++++++++++++++++++++++++++++++++++++X++++++++++++++                                                            +++++++++++++++++++++++---
+01 --------+++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++                                                            ++++++++++----------------
+02 --------------------++++++++++++++++++++++++++++++++++++++X++++++++++++++++++                                                            +++++++++++++++++++++-----
+03 -------------------+++++++++++++++++++++++++++++++++++X++++++++++++++++++++++                                                            ++++++++++++++------------
+04 ---------------------++++++++++++++++++++++++++++++++++++++X+++++++++++++++++                                                            +++++++++++++++++++++-----
+05 ----------------++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++                                                            +++++++++++++-------------
+06 ---------------+++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++                                                            ++++++++++++++------------
+07 ----------------++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++                                                            ++++++++++++--------------
+08 -------------------------+++++++++++++++++++++++++++++++++++++X++++++++++++++                                                            +++++++++++++++++++++++---
+09 -----------++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++                                                            +++++++++++---------------
+10 ----------------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++                                                            ++++++++++++++++++++------
+11 ------------++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++                                                            +++++++++-----------------
+12 --------------------++++++++++++++++++++++++++++++++++++++X++++++++++++++++++                                                            ++++++++++++++++++++------
+13 ------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++                                                            ++++++++++----------------
+14 -----------------++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++                                                            +++++++++++++++++---------
+15 ----------------+++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++                                                            +++++++++++++++-----------
+
+Shmoo RD DQ N
+   00000000000000000000000000000000000000000000000000000000000000000000000000000                                                            00000000000000000000000111
+   00000000001111111111222222222233333333334444444444555555555566666666667777777                                                            77788888888889999999999000
+   01234567890123456789012345678901234567890123456789012345678901234567890123456                                                            78901234567890123456789012
+00 ------------------++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++                                                            +++++++++++++++++++++++---
+01 --++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++                                                            +++++++-------------------
+02 --------------++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++                                                            ++++++++++++++++++--------
+03 -------------+++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++                                                            +++++++++++++++-----------
+04 ---------------+++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++                                                            +++++++++++++++++++++-----
+05 ---------++++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++                                                            +++++++++++++-------------
+06 -----------+++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++                                                            +++++++++++++-------------
+07 -----------++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++                                                            +++++++++++---------------
+08 -------------------++++++++++++++++++++++++++++++++++++++++X+++++++++++++++++                                                            ++++++++++++++++++++++++--
+09 -------+++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++                                                            ++++++++++----------------
+10 ----------------+++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++                                                            ++++++++++++++++++--------
+11 -----+++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++                                                            ++++++++------------------
+12 --------------+++++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++                                                            +++++++++++++++++++++-----
+13 ------+-+++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++                                                            ++++++++++----------------
+14 ------------++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++                                                            ++++++++++++++++----------
+15 -----------+++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++                                                            +++++++++++++-------------
+
+RD DQS adjustments :
+BL0: Start: 0x5C Final: 0x5C
+BL1: Start: 0x5C Final: 0x5C
+
+Shmoo WR DQ
+   00000000000000000000000000000000000000000000000000000000000000000000000000000                                                            00000000000000000000000111
+   00000000001111111111222222222233333333334444444444555555555566666666667777777                                                            77788888888889999999999000
+   01234567890123456789012345678901234567890123456789012345678901234567890123456                                                            78901234567890123456789012
+00 ------------------++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++                                                            ++++++++++++++++++--------
+01 --+++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++                                                            +++++---------------------
+02 ------------++++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++                                                            +++++++++++++++++---------
+03 ----------++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++                                                            +++++++-------------------
+04 -------------++++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++                                                            +++++++++++++++++---------
+05 ------++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++                                                            ++++++--------------------
+06 ---------+++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++                                                            ++++++++++++--------------
+07 -----------+++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++                                                            ++++++++++----------------
+08 ----------------+++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++                                                            ++++++++++++++++++--------
+09 -----++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++                                                            +++++---------------------
+10 -----------+++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++                                                            +++++++++++++-------------
+11 --+++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++                                                            +++++---------------------
+12 ----------+++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++                                                            ++++++++++++--------------
+13 -++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++++                                                            ++------------------------
+14 -------+++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++                                                            ++++++++++----------------
+15 --------++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++                                                            +++++++++-----------------
+
+Shmoo WR DM
+WR DM
+   00000000000000000000000000000000000000000000000000000000000000000000000000000                                                            00000000000000000000000111
+   00000000001111111111222222222233333333334444444444555555555566666666667777777                                                            77788888888889999999999000
+   01234567890123456789012345678901234567890123456789012345678901234567890123456                                                            78901234567890123456789012
+00 -+++++++++++++++++++++++++++++++++++++++X++++++++++++++++++++++++++++++++++++                                                            ++++----------------------
+01 -++++++++++++++++++++++++++++++++++++++++X+++++++++++++++++++++++++++++++++++                                                            ++++++--------------------
+start of memsys_end
+[80180004] = 0x8110071f
+[80180010] = 0x00000008
+end of memsys_end
+DDR test done successfully
+FFinit find magic number 0x75456e76 at address 0x40000
+FFinit find magic number 0x74506c21 at address 0x80000
+reading blob from 0x80000 offset 0xc len 154216
+digest sha256 OK
+
+U-Boot TPL 2019.07 (Sep 20 2021 - 17:51:24 -0400)
+Board is non secure
+$TPL: 5.04L.02@314035 $
+set cpu freq to 1500MHz
+IMAGE is NAND
+Trying to boot from NAND
+SPI NAND ID: 0xa1 0xe4
+128 MiB, block size: 128 KiB, page size: 2048
+INFO: IMAGE specified beyond flash size... using flash up to the end for image
+image from 2097152 to 133169152
+RESET STATUS is 0x80000000
+SELECTED Image 1 FIT_VOL_ID is 3
+Found FIT format U-Boot
+tpl_load_read: sector 7000000, count 2dd8, buf 07000000
+tpl_load_read: sector 7000000, count 3dd6, buf 07000000
+fit read sector 7000000, sectors=15830, dst=00000000, count=117440512, size=0x3d                                                            d6
+tpl_load_read: sector 70032c0, count 4024, buf 00004000
+## Checking hash(es) for Image atf ... sha256+ OK
+tpl_load_read: sector 70072c0, count d6d84, buf 01000000
+## Checking hash(es) for Image uboot ... sha256+ OK
+tpl_load_read: sector 77ab600, count d855, buf 010d6d80
+## Checking hash(es) for Image fdt_96755P2 ... sha256+ OK
+tpl_load_read: sector 76f5240, count 6f17, buf 000c0000
+## Checking hash(es) for Image pmcfw_code ... sha256+ OK
+tpl_load_read: sector 76fc140, count 654, buf 80380100
+## Checking hash(es) for Image pmcfw_data ... sha256+ OK
+
+
+U-Boot 2019.07 (Sep 20 2021 - 17:52:25 -0400), Build: 5.04L.02@314035
+
+Model: Broadcom BCM947622
+DRAM:  256 MiB
+max supported leds 32[32]
+ Parallel CLED interface found
+BCA CLED Controller initialized
+SW led 5 registered
+SW led 7 registered
+SW led 11 registered
+pmc firmware data has been loaded to 0x80380100, size=1596B
+pmc firmware code has been loaded to 0xc0000, size=28419B
+Take PMC out of reset
+waiting for PMC finish booting
+PMC rev: 3.2.2.265063 running
+pmc_init:PMC using DQM mode
+Chip ID: BCM6755_A1
+$Uboot: 5.04L.02@314035 $
+WDT:   Started with servicing (80s timeout)
+NAND:  SPINAND ID 0xa1 0xe4 0x7f 0x7f
+128 MiB
+MMC:   sdhci: 0
+Loading Environment from BOOT_MAGIC... ENV_BOOT_MAGIC_LOAD
+found magic at 40000
+good crc
+resize from 16384 to 8192
+OK
+In:    serial0
+Out:   serial0
+Err:   serial0
+Model: Broadcom BCM947622
+Board is non secure
+Now we are in UBOOT proper
+HTTPD: ready for starting
+boot_device is NAND
+adjusted to skip last 8 blocks
+image in NAND from 2097152 to 133169152
+
+device nand0 <spi1.0>, # parts = 2
+ #: name                size            offset          mask_flags
+ 0: loader              0x00200000      0x00000000      0
+ 1: image               0x07d00000      0x00200000      0
+
+active partition: nand0,0 - (loader) 0x00200000 @ 0x00000000
+
+defaults:
+mtdids  : nand0=spi1.0
+mtdparts: spi1.0:2097152(loader)
+Net:   switch set mdio_base 80411300
+calling phy_wkard_timeout 25000
+eth0: systemport@0x80400000
+Hit any key to stop autoboot:  0
++bootargs=ipv6.disable=1
+IMAGE=NAND:2M,1024M
+MCB=132f
+boardid=96755P2
+bootcmd=printenv;run once;sdk boot_img
+bootdelay=5
+env_boot_magic=16384@0x40000,0xad000
+ethaddr=C8:C7:50:DB:66:90
+fdtcontroladdr=df0ec28
+filesize=408
+ipaddr=192.168.1.1
+mfg_cc=US
+mfg_cc_rev=2
+mfg_hw_model=MH7601
+mfg_provisioned=1
+mfg_psk=FewKayak782
+mfg_pwd=FewKayak782
+mfg_sn=3151-MH7601-30B-2379-919178b9
+mfg_ssid_pfx=mh7601-
+mfg_tw_isn=241B0C020473
+mtddevname=loader
+mtddevnum=0
+mtdids=nand0=spi1.0
+mtdparts=spi1.0:2097152(loader),131072000@2097152(image)
+netmask=255.255.255.0
+nummacaddrs=10
+once=true
+partition=nand0,0
+stderr=serial0
+stdin=serial0
+stdout=serial0
+
+Environment size: 639/8188 bytes
+No size specified -> Using max size (8488240)
+Read 8488240 bytes from volume bootfs1 to 02000000
+Read 4 bytes from volume rootfs1 to 0df0e9ec
+## Loading kernel from FIT Image at 02000000 ...
+   Using 'conf_lx_96755P2' configuration
+   Verifying Hash Integrity ... OK
+   Trying 'kernel' kernel subimage
+     Description:  4.19 kernel
+     Type:         Kernel Image
+     Compression:  lzo compressed
+     Data Start:   0x020df048
+     Data Size:    6382090 Bytes = 6.1 MiB
+     Architecture: ARM
+     OS:           Linux
+     Load Address: 0x00108000
+     Entry Point:  0x00108000
+     Hash algo:    sha256
+     Hash value:   a2565cf226f21991102006a22133e16ba66d214dc174c6e88e8bc9aab10556d7
+   Verifying Hash Integrity ... sha256+ OK
+## Loading fdt from FIT Image at 02000000 ...
+   Using 'conf_lx_96755P2' configuration
+   Verifying Hash Integrity ... OK
+   Trying 'fdt_96755P2' fdt subimage
+     Description:  dtb
+     Type:         Flat Device Tree
+     Compression:  uncompressed
+     Data Start:   0x027ab63c
+     Data Size:    55321 Bytes = 54 KiB
+     Architecture: ARM
+     Hash algo:    sha256
+     Hash value:   805513c746de636d2088897bc48e3f2469f7b7aeedc9d99258c2c02cb92cb5fc
+   Verifying Hash Integrity ... sha256+ OK
+   Booting using the fdt blob at 0x27ab63c
+   Uncompressing Kernel Image ... OK
+   Loading Device Tree to 07f72000, end 07fff818 ... OK
+appending extra boot args to linux boot command line:
+   mtdparts=spi1.0:2097152(loader),131072000@2097152(image) root=/dev/ubiblock0_4 ubi.mtd=1 ubi.block=0,4 rootfstype=squashfs ipv6.disable=1 cma=0M
+
+Starting kernel ...
+
+remove sysport
+system port tx wait 0 timeout 1000 p 0 c 0
+sysport reset 0
+Booting Linux on physical CPU 0x0
+Linux version 4.19.151 (nobody@jenkins-slave-ubuntu16-64-4) (gcc version 9.2.0 (Buildroot 2019.11.1)) #1 SMP PREEMPT Mon Sep 20 17:22:16 EDT 2021
+CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c5387d
+CPU: div instructions available: patching division code
+CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+OF: fdt: Machine model: Broadcom BCM947622
+bootconsole [earlycon0] enabled
+Memory policy: Data cache writealloc
+On node 0 totalpages: 65536
+  Normal zone: 512 pages used for memmap
+  Normal zone: 0 pages reserved
+  Normal zone: 65536 pages, LIFO batch:15
+psci: probing for conduit method from DT.
+psci: PSCIv1.1 detected in firmware.
+psci: Using standard PSCI v0.2 function IDs
+psci: MIGRATE_INFO_TYPE not supported.
+psci: SMC Calling Convention v1.0
+random: get_random_bytes called from start_kernel+0x9c/0x490 with crng_init=0
+percpu: Embedded 14 pages/cpu s27724 r8192 d21428 u57344
+pcpu-alloc: s27724 r8192 d21428 u57344 alloc=14*4096
+pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3
+Built 1 zonelists, mobility grouping on.  Total pages: 65024
+Kernel command line: mtdparts=spi1.0:2097152(loader),131072000@2097152(image) root=/dev/ubiblock0_4 ubi.mtd=1 ubi.block=0,4 rootfstype=squashfs ipv6.disable=1 cma=0M console=ttyAMA0 earlyprintk debug irqaffinity=0 pci=pcie_bus_safe isolcpus=3
+log_buf_len individual max cpu contribution: 4096 bytes
+log_buf_len total cpu_extra contributions: 12288 bytes
+log_buf_len min size: 16384 bytes
+log_buf_len: 32768 bytes
+early log buf free: 14460(88%)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Memory: 247132K/262144K available (6144K kernel code, 1708K rwdata, 1212K rodata, 1024K init, 242K bss, 15012K reserved, 0K cma-reserved, 0K highmem)
+Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+    vmalloc : 0xd0800000 - 0xff800000   ( 752 MB)
+    lowmem  : 0xc0000000 - 0xd0000000   ( 256 MB)
+    pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+    modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+      .text : 0x(ptrval) - 0x(ptrval)   (7136 kB)
+      .init : 0x(ptrval) - 0x(ptrval)   (1024 kB)
+      .data : 0x(ptrval) - 0x(ptrval)   (1709 kB)
+       .bss : 0x(ptrval) - 0x(ptrval)   ( 243 kB)
+SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+rcu: Preemptible hierarchical RCU implementation.
+        Tasks RCU enabled.
+NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+arch_timer: cp15 timer(s) running at 50.00MHz (phys).
+clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0xb8812736b, max_idle_ns: 440795202655 ns
+sched_clock: 56 bits at 50MHz, resolution 20ns, wraps every 4398046511100ns
+Switching to timer-based delay loop, resolution 20ns
+BRCM Legacy Drivers' Helper, all legacy drivers' IO memories/interrupts should be remapped here
+     Remapping interrupts...
+             hwirq      virq
+               60        20
+               61        21
+               66        22
+              110        23
+               69        24
+              152        25
+              153        26
+              154        27
+              155        28
+              156        29
+              157        30
+              158        31
+              159        32
+               78        33
+               79        34
+               80        35
+               81        36
+               82        37
+               83        38
+               84        39
+               85        40
+              104        41
+              105        42
+              106        43
+              128        44
+              129        45
+              130        46
+              131        47
+              132        48
+              133        49
+              134        50
+              135        51
+              136        52
+              137        53
+              138        54
+              139        55
+              148        56
+              149        57
+     Remapping IO memories...
+             phys              virt          size
+       0000000080180000  00000000d0840000  00024000
+       00000000ff800000  00000000d0820000  00013000
+       00000000ff810000  00000000d0880000  0004b000
+       00000000ffe00000  00000000d0900000  00100000
+       00000000ff860000  00000000d0806000  00002000
+       0000000083010a00  00000000d0809a00  00000100
+       000000008000c000  00000000d080c000  00003fff
+       0000000083010000  00000000d0811000  00001000
+       0000000083018000  00000000d0813000  00001000
+       0000000083020000  00000000d0815000  00001000
+       0000000083028000  00000000d0817000  00001000
+       0000000083030000  00000000d0819000  00001000
+       0000000083038000  00000000d081b000  00001000
+       0000000083040000  00000000d081d000  00001000
+       0000000083050000  00000000d0834000  00001000
+       0000000083058000  00000000d0836000  00001000
+       0000000083048000  00000000d0838000  00001000
+       00000000810a0000  00000000d083a000  00001000
+       0000000081060000  00000000d083c000  00003000
+       00000000ffff0000  00000000d0865000  00001000
+       0000000083000000  00000000d0867000  00001000
+       000000008306c000  00000000d0869000  00001000
+       0000000080400000  00000000d08e0000  00013000
+       0000000080500000  00000000d0a20000  00013000
+       0000000081100000  00000000d0a80000  00091000
+Calibrating delay loop (skipped), value calculated using timer frequency.. 100.00 BogoMIPS (lpj=50000)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+CPU: Testing write buffer coherency: ok
+Setting up static identity map for 0x200000 - 0x200060
+rcu: Hierarchical SRCU implementation.
+CCI hardware cache coherency enabled
+bootloader version  U-Boot 2019.07 (Sep 20 2021 - 17:52:25 -0400), Build: 5.04L.0
+
+
+inMemNvramData.szBoardId 96755P2
+smp: Bringing up secondary CPUs ...
+smp: Brought up 1 node, 4 CPUs
+SMP: Total of 4 processors activated (400.00 BogoMIPS).
+CPU: All CPU(s) started in SVC mode.
+devtmpfs: initialized
+VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+futex hash table entries: 1024 (order: 4, 65536 bytes)
+pinctrl core: initialized pinctrl subsystem
+NET: Registered protocol family 16
+DMA: preallocated 256 KiB pool for atomic coherent allocations
+cpuidle: using governor ladder
+PMC driver initcall
+PMC driver scanning DT
+pmc match PMC brcm,bca-pmc-3-2
+     Remapping PMC IO memories...
+             phys              virt          size
+     0x0000000080301018 0x00000000d0878018 0x00005080
+     0x0000000080320000 0x00000000d0871000 0x00000240
+     0x0000000080300400 0x00000000d0873400 0x000005d0
+     0x0000000080380000 0x00000000d0875000 0x00001000
+pmc_init:PMC using DQM mode
+Serial: AMBA PL011 UART driver
+ff812000.serial0: ttyAMA0 at MMIO 0xff812000 (irq = 63, base_baud = 0) is a PL011 rev3
+console [ttyAMA0] enabled
+console [ttyAMA0] enabled
+bootconsole [earlycon0] disabled
+bootconsole [earlycon0] disabled
+bcm-bca-gpio ff800500.gpioc: Setting up BCA GPIO
+bca_extintr ff800004.bca_extintr0: Ext_Int_0 HWIrq 152 virq 25
+bca_extintr ff800004.bca_extintr0: Ext_Int_1 HWIrq 153 virq 26
+bca_extintr ff800004.bca_extintr0: Ext_Int_2 HWIrq 154 virq 27
+bca_extintr ff800004.bca_extintr0: Ext_Int_3 HWIrq 155 virq 28
+bca_extintr ff800004.bca_extintr0: Ext_Int_4 HWIrq 156 virq 29
+bca_extintr ff800004.bca_extintr0: Ext_Int_5 HWIrq 157 virq 30
+bca_extintr ff800004.bca_extintr0: Ext_Int_6 HWIrq 158 virq 31
+bca_extintr ff800004.bca_extintr0: Ext_Int_7 HWIrq 159 virq 32
+bca_extintr ff800004.bca_extintr0: Readed resouce bca_extintr0 start 0xff800004 end 0xff80004b
+bcm-bca-cled-ctrl ff803000.led_ctrl: max supported leds 32[32]
+bcm-bca-cled-ctrl ff803000.led_ctrl:  Parallel CLED interface found
+bcm-bca-cled-ctrl ff803000.led_ctrl: BCA CLED Controller initialized
+map_hw_timer_interrupt,162: interrupt_id 64
+map_hw_timer_interrupt,162: interrupt_id 65
+map_hw_timer_interrupt,162: interrupt_id 66
+map_hw_timer_interrupt,162: interrupt_id 67
+Allocated EXT_TIMER number 3
+Broadcom Timer Initialized
+bcm-bca-leds ff803000.led_ctrl:led_red: SW led 5 registered
+bcm-bca-leds ff803000.led_ctrl:led_green: SW led 7 registered
+bcm-bca-leds ff803000.led_ctrl:led_blue: SW led 11 registered
+Broadcom GBPM v0.1 initialized
+Broadcom IQoS v1.0 initialized
+Broadcom Logger v0.1
+/dev/bcmnet Char device registered
+skb_free_task created successfully with start budget 128
+BLOG v3.0 Initialized
+BLOG Rule v1.0 Initialized
+Skip Legacy Led init
+bca_led_request_sw_led:L631 adsl-led led not found
+bca_led_request_sw_led:L631 adsl-fail-led led not found
+bca_led_request_sw_led:L631 sec-adsl-led led not found
+bca_led_request_sw_led:L631 sec-adsl-fail-led led not found
+bca_led_request_sw_led:L631 wan-data-led led not found
+bca_led_request_sw_led:L631 wan-data-fail-led led not found
+bca_led_request_sw_led:L631 wl-sess-led led not found
+bca_led_request_sw_led:L631 voip-led led not found
+bca_led_request_sw_led:L631 voip1-ok-led led not found
+bca_led_request_sw_led:L631 voip1-fail-led led not found
+bca_led_request_sw_led:L631 voip2-ok-led led not found
+bca_led_request_sw_led:L631 voip2-fail-led led not found
+bca_led_request_sw_led:L631 pots-led led not found
+bca_led_request_sw_led:L631 dect-led led not found
+bca_led_request_sw_led:L631 wl0-led led not found
+bca_led_request_sw_led:L631 wl1-led led not found
+bca_led_request_sw_led:L631 usb-led led not found
+bca_led_request_sw_led:L631 sim-led led not found
+bca_led_request_sw_led:L631 sim-itms-led led not found
+clocksource: Switched to clocksource arch_sys_counter
+NET: Registered protocol family 2
+tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes)
+TCP established hash table entries: 2048 (order: 1, 8192 bytes)
+TCP bind hash table entries: 2048 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
+UDP hash table entries: 256 (order: 1, 8192 bytes)
+UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+PCI: CLS 0 bytes, default 64
+Crashlog allocated RAM at address 0x3f00000
+Initialise system trusted keyrings
+workingset: timestamp_bits=30 max_order=16 bucket_order=0
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+Key type asymmetric registered
+Asymmetric key parser 'x509' registered
+io scheduler noop registered (default)
+io scheduler mq-deadline registered
+io scheduler kyber registered
+iproc-rng200 ff800b80.rng: hwrng registered
+brd: module loaded
+loop: module loaded
+bcm63xx-hsspi ff801000.spi: spi driver using polling mode
+SPINAND ID
+ 0xa1
+ 0xe4
+ 0x7f
+ 0x7f
+
+spi-nand spi1.0: Broadcom SPI NAND was found.
+spi-nand spi1.0: 128 MiB, block size: 128 KiB, page size: 2048, OOB size: 128
+2 cmdlinepart partitions found on MTD device spi1.0
+Creating 2 MTD partitions on "spi1.0":
+0x000000000000-0x000000200000 : "loader"
+0x000000200000-0x000007f00000 : "image"
+PPP generic driver version 2.4.2
+PPP BSD Compression module registered
+PPP Deflate Compression module registered
+NET: Registered protocol family 24
+PPTP driver version 0.8.5
+i2c /dev entries driver
+GACT probability NOT on
+Mirror/redirect action on
+u32 classifier
+    input device check on
+    Actions configured
+gre: GRE over IPv4 demultiplexor driver
+ip_gre: GRE over IPv4 tunneling driver
+Initializing XFRM netlink socket
+IPv6: Loaded, but administratively disabled, reboot required to enable
+IPv6: ah6_init: can't add xfrm type
+IPv6: esp6_init: can't add xfrm type
+sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+ip6_gre: GRE over IPv6 tunneling driver
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+l2tp_core: L2TP core driver, V2.0
+l2tp_ppp: PPPoL2TP kernel driver, V2.0
+8021q: 802.1Q VLAN Support v1.8
+sctp: Hash tables configured (bind 512/512)
+brcmboard registered
+brcmboard: brcm_board_init entry
+Last RESET due to Unknown
+RESET reason: 0x00000000
+DYING GASP IRQ Initialized and Enabled
+i2c-bcm63000 ff802100.i2c: Broadcom BCM96xxx I2C driver
+bcm_i2c: No port/bus number define i2c interface 0!!!
+bcm_i2c: No port/bus number define i2c interface 1!!!
+Broadcom BPM Module Char Driver v0.1 Registered<304>
+BPM: tot_mem_size=268435456B (256MB),
+buf_mem_size <25%> =67108850B (63MB),
+num of buffers=25575, buf size=2624
+[NTC bpm] bpm_mem_pool_buf_alloc: tot_mem_pool=1066 mem_idx:1066
+[NTC bpm] bpm_init_buf_pool: buf_top_idx:25575
+[NTC bpm] bpm_init_skb_pool: skbs pool inited total 20460
+init procfs
+pinctrl-bcmbca ff800554.pinctrl: bcmbca_gpio_request called for GPIO 9
+Bridge Broadcom hooks registered
+ebt_blog registered
+ebt_ftos registered
+ebt_qos_map registered
+ebt_time registered
+ebt_vtag registered
+ebt_wmm_mark registered
+ebt_reject registered
+brcm-ephyled 80410000.ephyled: invalid resource
+brcm-ephyled 80410000.ephyled: Missing aggregate_ctrl entry, ignoring
+brcm-ephyled 80410000.ephyled: registered
+brcm-rgmii 80411020.rgmii: registered
+brcm-unimac 80400800.unimac: registered
+brcm-mdio 80411300.mdiosf2: registered
+Registering SWP/SWPB emulation handler
+Loading compiled-in X.509 certificates
+ubi0: attaching mtd1
+ubi0: scanning is finished
+ubi0: attached mtd1 (name "image", size 125 MiB)
+ubi0: PEB size: 131072 bytes (128 KiB), LEB size: 126976 bytes
+ubi0: min./max. I/O unit sizes: 2048/2048, sub-page size 2048
+ubi0: VID header offset: 2048 (aligned 2048), data offset: 4096
+ubi0: good PEBs: 1000, bad PEBs: 0, corrupted PEBs: 0
+ubi0: user volume: 9, internal volumes: 1, max. volumes count: 128
+ubi0: max/mean erase counter: 3/0, WL threshold: 4096, image sequence number: 1420300809
+ubi0: available PEBs: 224, total reserved PEBs: 776, PEBs reserved for bad PEB handling: 20
+ubi0: background thread "ubi_bgt0d" started, PID 515
+block ubiblock0_4: created from ubi0:4(rootfs1)
+Registered phy device: EGPHY:0x8
+Registered phy device: EGPHY:0x18
+VFS: Mounted root (squashfs filesystem) readonly on device 254:0.
+devtmpfs: mounted
+Freeing unused kernel memory: 1024K
+Run /sbin/init as init process
+init: Console is alive
+init: - watchdog -
+kmodloader: loading kernel modules from /etc/modules-boot.d/*
+kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+init: - preinit -
+Press the [f] key and hit [enter] to enter failsafe mode
+Press the [1], [2], [3] or [4] key and hit [enter] to select the debug level
+UBIFS (ubi0:20): background thread "ubifs_bgt0_20" started, PID 623
+UBIFS (ubi0:20): recovery needed
+UBIFS (ubi0:20): recovery completed
+UBIFS (ubi0:20): UBIFS: mounted UBI device 0, volume 20, name "rootfs_data"
+UBIFS (ubi0:20): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+UBIFS (ubi0:20): FS size: 19808256 bytes (18 MiB, 156 LEBs), journal size 1015809 bytes (0 MiB, 8 LEBs)
+UBIFS (ubi0:20): reserved for root: 935592 bytes (913 KiB)
+UBIFS (ubi0:20): media format: w5/r0 (latest is w5/r0), UUID 3CDA5DDC-3976-41E9-960B-AF2B67A42DC0, small LPT model
+mount_root: switching to ubifs overlay
+overlayfs: upper fs does not support xattr, falling back to index=off and metacopy=off.
+urandom-seed: Seeding with /etc/urandom.seed
+procd: - early -
+procd: - watchdog -
+procd: - watchdog -
+procd: - ubus -
+procd: - init -
+Please press Enter to activate this console.
+urngd: v1.0.2 started.
+kmodloader: loading kernel modules from /etc/modules.d/*
+kmodloader: done loading kernel modules from /etc/modules.d/*
+UBIFS (ubi0:10): background thread "ubifs_bgt0_10" started, PID 870
+UBIFS (ubi0:10): recovery needed
+UBIFS (ubi0:10): recovery completed
+UBIFS (ubi0:10): UBIFS: mounted UBI device 0, volume 10, name "data"
+UBIFS (ubi0:10): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+UBIFS (ubi0:10): FS size: 7237632 bytes (6 MiB, 57 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+UBIFS (ubi0:10): reserved for root: 341850 bytes (333 KiB)
+UBIFS (ubi0:10): media format: w5/r0 (latest is w5/r0), UUID 5B5157DD-9AC2-4EC4-83E1-76504BCEC615, small LPT model
+UBIFS (ubi0:11): background thread "ubifs_bgt0_11" started, PID 878
+UBIFS (ubi0:11): UBIFS: mounted UBI device 0, volume 11, name "defaults"
+UBIFS (ubi0:11): LEB size: 126976 bytes (124 KiB), min./max. I/O unit sizes: 2048 bytes/2048 bytes
+UBIFS (ubi0:11): FS size: 7237632 bytes (6 MiB, 57 LEBs), journal size 1015809 bytes (0 MiB, 6 LEBs)
+UBIFS (ubi0:11): reserved for root: 341850 bytes (333 KiB)
+UBIFS (ubi0:11): media format: w5/r0 (latest is w5/r0), UUID 43102DD7-59C0-4122-BF36-43EF6DBB9829, small LPT model
+UBIFS (ubi0:11): background thread "ubifs_bgt0_11" stops
+wlcsm: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+Initializing WLCSM Module
+WLCSM Module loaded successfully
+BCMLIBS loaded...
+Broadcom 802.1Q VLAN Interface, v0.1
+brcmchipinfo: brcm_chipinfo_init entry
+Broadcom Ingress QoS Module  Char Driver v1.0 Registered<303>
+
+Broadcom Ingress QoS v1.0 initialized
+Broadcom Packet Flow Cache
+FCACHE_CONFIG_MAX_UCAST_FLOW_ENTRIES<16384>
+FCACHE_CONFIG_MAX_MCAST_GROUPS<128>
+FCACHE_CONFIG_MAX_MCAST_CLIENTS_PER_GROUP<63>
+FCACHE_CONFIG_MAX_MCAST_CLIENTS<1024>
+FCACHE_CONFIG_MAX_FDB_ENTRIES<1024>
+FCACHE_CONFIG_MAX_HOST_DEV_ENTRIES<64>
+FCACHE_CONFIG_MAX_HOST_MAC_ENTRIES<32>
+npe_max_entries<35072>
+Bind blog_notify_evt_enqueue_fn[<bf234dd8>]
+fc_evt task created successfully
+max_ent = 17536 intvl_msec = 10000 num_slices = 2000 num_ent = 9 period_msec = 5
+NBUFF v1.0 Initialized
+fcache: mcast_max_groups<128> mcast_max_clients_per_group<63> mcast_max_clients<1024>
+fcache: mcast_max_ent<1152>
+fcache: ucast_max_ent<16384>
+fcache: max_ent<17536>
+Total # of labels = 75
+Initialized fcache state
+        Pkt HW acceleration is disabled/unavailable.
+Broadcom Packet Flow Cache  Char Driver v4.0 Registered<302>
+fc_timer_task created successfully
+        Pkt HW acceleration is disabled/unavailable.
+Created Proc FS /procfs/fcache
+Broadcom Packet Flow Cache registered with netdev chain
+Broadcom Packet Flow Cache learning via BLOG enabled.
+[FHW]  pktDbgLvl[0x8f66def1]=0
+[FHW]  fhw_construct:
+Initialized Fcache HW accelerator layer state
+flwStatsThread created. numFlwsPerPoll 584 maxFlwIdx 17535
+Fcache Pathstats created
+Constructed Broadcom Packet Flow Cache v4.0
+Broadcom Command List Driver v1.0
+Broadcom Archer Packet Accelerator Intializing
+Open archer Netdevice
+[ERROR archer] archer_dpi_construct,727: Failed to init log
+
+Archer WLAN Interface Construct (Threshold 32 packets, Timeout 500 usec, Jiffies 10)
+Archer WLAN Rx Thread Initialized
+Sysport 0 WOL IRQ 48
+Sysport 1 WOL IRQ 54
+SYSPORT Driver Constructed (Budget: 128, Coalescing: 826828 nsec)
+Archer Mode set to L2+L3
+Archer Mode set to L2+L3
+Initialized Archer Host Layer
+Flow Table (160, 40): f2a715c2, 2621440 bytes
+Flow Info Table (44, 65536): 41027824, 2883584 bytes
+Command List Table (128): virt 0xe3986863, phys 0x1c3c6636, size 2244608 bytes
+Command List Control Table (8): 2021a049, 140288 bytes
+Sysport Classifier: Max Flows = 17536 / 65536
+Archer IQ status changed from 0 to 1
+[NTC bitpool] idx_pool_init: 551:FHW[0]:Create Index Pool_Size = 17536
+Retrieve num_fhw_path=64
+Pathstats allocated 2048 bytes
+Broadcom Packet Flow Cache HW acceleration enabled.
+Enabled Archer binding to Flow Cache
+Broadcom Archer Network Processor Char Driver v0.1 Registered <339>
+Archer TCP Pure ACK Enabled
+bcmenet DT
+Registered mac device: UNIMAC:0x0
+Registered mac device: UNIMAC:0x1
+set RGMII pad ctrl for GPIO 56 to 0x0000e000
+set RGMII pad ctrl for GPIO 57 to 0x0000e000
+set RGMII pad ctrl for GPIO 58 to 0x0000e000
+set RGMII pad ctrl for GPIO 59 to 0x0000e000
+set RGMII pad ctrl for GPIO 60 to 0x0000e000
+set RGMII pad ctrl for GPIO 61 to 0x0000e000
+set RGMII pad ctrl for GPIO 62 to 0x0001e000
+set RGMII pad ctrl for GPIO 63 to 0x0001e000
+set RGMII pad ctrl for GPIO 64 to 0x0001e000
+set RGMII pad ctrl for GPIO 65 to 0x0001e000
+set RGMII pad ctrl for GPIO 66 to 0x0001e000
+set RGMII pad ctrl for GPIO 67 to 0x0001e000
+crossbar Mux: connect cb_idx:0  int_ep 0 to ext_ep 2
+crossbar Mux: connect cb_idx:0  int_ep 1 to ext_ep -1
+SYSPORT Host Binding Successfull
+Archer CPU Affinity = 3
+eth0      : Down          C8:C7:50:DB:66:91 IntSw:P0 Lgcl: 0 LAN PHY_ID:0x08:OnChip       NoApd    PwrDn       1 Gbps EGPHY Cfg: ANG.  1 Gbps;             Down                   Unknown
+eth1      : Down          C8:C7:50:DB:66:90 IntSw:P1 Lgcl: 1 LAN PHY_ID:0x18:Extrnl RGMII NoApd    PwrDn       1 Gbps EGPHY Cfg: ANG.  1 Gbps;             Down                   Unknown
+logical_port 0: intf_index 0, switch_index 0, phys_port 0 -> port_index 0, nbr_of_queues 8
+logical_port 1: intf_index 1, switch_index 0, phys_port 0 -> port_index 0, nbr_of_queues 8
+SYSPORT[0]: port[0] -> nbr_of_brcm_tags 0
+SYSPORT[0] = SWITCH_NONE
+SYSPORT[1]: port[0] -> nbr_of_brcm_tags 0
+SYSPORT[1] = SWITCH_NONE
+System Port Software TM Initialized
+RXQ[0]: IRQ 44, CPU 3
+CSB Initialized: 0xc8f4f000 (0xc8f4f000), size 64 (128)
+Ports 1, TDMA Rings 8
+Archer DMA Layer Initialized
+Sysport Recycle Task: IRQ 45, CPU 3
+System Port Software TM Initialized
+RXQ[0]: IRQ 50, CPU 3
+CSB Initialized: 0xc891f000 (0xc891f000), size 64 (128)
+Ports 1, TDMA Rings 8
+Archer DMA Layer Initialized
+Sysport Recycle Task: IRQ 51, CPU 3
+Sysport TM Enabled
+dgasp: kerSysRegisterDyingGaspHandler: bcmsw registered
+bcm_mcast_init successful
+Broadcom PCIe Host Controller Driver (impl1)
+  bcm-pcie: DEF CFG: ssc 0x0, speed  0x0, bootorder 0x0, apon 0x0
+  bcm-pcie:        : pwr 0x0, errlog 0x1111, msi 0x1111, acc  0x1111, pllclkid 0x3210
+  bcm-pcie:        : loglevel 0x1
+  bcm-pcie: [1] DT node available: pcie@85000000
+bcm-pcie 85000000.pcie: PCI host bridge to bus 0000:01
+pci_bus 0000:01: root bus resource [mem 0x85000000-0x85ffffff]
+pci_bus 0000:01: root bus resource [mem 0x86000000-0x86ffffff]
+pci_bus 0000:01: root bus resource [bus 01]
+  bcm-pcie: found Port [1] GEN0 Core Rev [1.00] with 0 Lanes
+  bcm-pcie: [1] vcore [0] initialized with [2] devices
+pci 0000:01:00.0: [14e4:f6ca] type 00 class 0x028000
+pci 0000:01:00.0: reg 0x10: [mem 0x85000000-0x85ffffff 64bit]
+pci 0000:01:00.0: supports D1 D2
+pci 0000:01:01.0: [14e4:f6ca] type 00 class 0x028000
+pci 0000:01:01.0: reg 0x10: [mem 0x86000000-0x86ffffff 64bit]
+pci 0000:01:01.0: supports D1 D2
+PCI: bus1: Fast back to back transfers disabled
+pci 0000:01:00.0: BAR 0: assigned [mem 0x85000000-0x85ffffff 64bit]
+pci 0000:01:01.0: BAR 0: assigned [mem 0x86000000-0x86ffffff 64bit]
+  bcm-pcie: Core [0] DT node available: pcie0
+bcm-pcie 80040000.pcie0: PCI host bridge to bus 0001:00
+pci_bus 0001:00: root bus resource [mem 0xc0000000-0xcfffffff]
+pci_bus 0001:00: root bus resource [bus 00-0f]
+  bcm-pcie: found Port [0] GEN2 Core Rev [3.23] with 2 Lanes
+getrcal for res select 5, int 661, ext 654, ratio 126 ratio1 136, rcal 8
+  bcm-pcie: Core [0] setting resistor calibration value to 0x8
+  bcm-pcie: Core [0] link is DOWN
+pci_bus 0001:00: busn_res: [bus 00-0f] is released
+  bcm-pcie: Core [0] dev [0] powered down
+broadcomThermalDrv brcm-therm: init (CPU count 4 4 4 4)
+brcm_otp_init entry
+Loading wlshared Module...
+cfg80211: Loading compiled-in X.509 certificates for regulatory database
+cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+cfg80211: failed to load regulatory.db
+Loading HND Module
+igs_module_init:867:     IGS 18 create network socket successful
+dhd_module_init in
+DHD_FKB_POOL size is:1280 and entry size:2624
+DHD_PKTTAG POOL size is:2592 and entry size:64
+dhd_queue_budget = 256
+dhd_sta_threshold = 2048
+dhd_if_threshold = 65536
+no wifi platform data, skip
+dhdpcie_pci_probe: chipmatch failed!! Unsupported vendor 14e4 device f6ca
+dhdpcie_pci_probe: chipmatch failed!! Unsupported vendor 14e4 device f6ca
+No Broadcom PCI device enumerated!
+dhd_module_init out
+osl_skb_audit: PASS
+wl_module_init: passivemode set to 0x0
+wl_module_init: txworkq set to 0x0
+wl 0000:01:00.0: enabling device (0140 -> 0142)
+si_doattach: using BAR0 value: enum_base=85000000
+BME Service Initialization
+BME: M2M Core id 0x844 rev 128
+M2M Service Initialization: M2M_DD_ENAB 0x00000003
+M2M: M2M Core id 0x844 rev 128
+M2M: SUCCESS eng 0 alloc rings <8347a0c4,7a8bb537>,3c5acae1 depth 256
+M2M: SUCCESS eng 1 alloc rings <1d193711,096ea37e>,ec60b157 depth 256
+M2M: DMA 0 IntRcvLazy 01000000
+M2M: DMA 0 RcvCtrl XmtCtrl enabled
+M2M: DMA 1 IntRcvLazy 01000000
+M2M: DMA 1 RcvCtrl XmtCtrl enabled
+wl0: phy_radio_attach: RF Band Cap: 2G:1 5G:1
+BME:register key<1010804> user RLM sel IDX set 1 mem 4 8 hi 0 0
+CSIMON module registered
+wl0: Broadcom BCM63178 802.11 Wireless Controller 17.10.157.2803 (r795020)
+
+dgasp: kerSysRegisterDyingGaspHandler: wl0 registered
+wl 0000:01:01.0: enabling device (0140 -> 0142)
+si_doattach: using BAR0 value: enum_base=86000000
+BME Service Initialization
+BME: M2M Core id 0x844 rev 128
+M2M Service Initialization: M2M_DD_ENAB 0x00000003
+M2M: M2M Core id 0x844 rev 128
+M2M: SUCCESS eng 0 alloc rings <cffde654,e78b52eb>,8aa89588 depth 256
+M2M: SUCCESS eng 1 alloc rings <04dea732,647f9f60>,64109700 depth 256
+M2M: DMA 0 IntRcvLazy 01000000
+M2M: DMA 0 RcvCtrl XmtCtrl enabled
+M2M: DMA 1 IntRcvLazy 01000000
+M2M: DMA 1 RcvCtrl XmtCtrl enabled
+wl1: phy_radio_attach: RF Band Cap: 2G:1 5G:1
+BME:register key<1010804> user RLM sel IDX set 1 mem 4 8 hi 0 0
+CSIMON module registered
+wl1: Broadcom BCM63178 802.11 Wireless Controller 17.10.157.2803 (r795020)
+
+dgasp: kerSysRegisterDyingGaspHandler: wl1 registered
+br-lan: port 1(eth1) entered blocking state
+br-lan: port 1(eth1) entered disabled state
+device eth1 entered promiscuous mode
+CSIMON:  CSIMON[1.1.0] Initialization
+CFG80211-ERROR) wl_notify_country_code_change :
+Updating to new country US
+/etc/init.d/led boot override
+CSIMON:  CSIMON[1.1.0] Initialization
+CSIMON: M2M usr already registered ...
+CFG80211-ERROR) wl_allocate_wowl_config :
+Wowl not supported (-23)
+>>>>> Starting Unum v2.0.0.224 <<<<<
+>>>>> Starting Unum v2.0.0.224 mode: support <<<<<
+>>>>> Starting Unum v2.0.0.224 mode: updater <<<<<
+CSIMON:  CSIMON[1.1.0] Initialization
+CFG80211-ERROR) wl_get_vif_macaddress :
+Virtual I/F mac addr: 02:90:4c:39:5a:64
+CFG80211-ERROR) wl_notify_country_code_change :
+Updating to new country US
+CSIMON:  CSIMON[1.1.0] Initialization
+CSIMON: M2M usr already registered ...
+CFG80211-ERROR) wl_allocate_wowl_config :
+Wowl not supported (-23)
+br-lan: port 2(wl0) entered blocking state
+br-lan: port 2(wl0) entered disabled state
+device wl0 entered promiscuous mode
+br-lan: port 2(wl0) entered blocking state
+br-lan: port 2(wl0) entered forwarding state
+br-lan: port 3(wl1) entered blocking state
+br-lan: port 3(wl1) entered disabled state
+device wl1 entered promiscuous mode
+br-lan: port 3(wl1) entered blocking state
+br-lan: port 3(wl1) entered forwarding state
+br-lan: port 4(wl1.1) entered blocking state
+br-lan: port 4(wl1.1) entered disabled state
+device wl1.1 entered promiscuous mode
+br-lan: port 4(wl1.1) entered blocking state
+br-lan: port 4(wl1.1) entered forwarding state
+bsd calls setitimer() with new_value NULL pointer. Misfeature support will be removed
+CSIMON:  CSIMON[1.1.0] Initialization
+CSIMON: M2M usr already registered ...
+CSIMON:  CSIMON[1.1.0] Initialization
+CSIMON: M2M usr already registered ...
+CFG80211-ERROR) wl_cfg80211_add_virtual_iface :
+Recvd application provided mac address:92:c7:50:db:66:93
+CFGP2P-ERROR) wl_cfgp2p_find_ndev :
+ p2p inactive
+wl1: random key value: CA52F93FA64261324DAB019F2FE2C443EFFE33759CBD0192A2D4D6563E97CEFD
+br-lan: port 4(wl1.1) entered disabled state
+device wl1.1 left promiscuous mode
+br-lan: port 4(wl1.1) entered disabled state
+CFG80211-ERROR) wl_event_handler :
+No wdev corresponding to bssidx: 0x1 found! Ignoring event.
+br-lan: port 2(wl0) entered disabled state
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+device wl0 left promiscuous mode
+br-lan: port 2(wl0) entered disabled state
+CSIMON:  CSIMON[1.1.0] Initialization
+CSIMON: M2M usr already registered ...
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CSIMON:  CSIMON[1.1.0] Initialization
+CSIMON: M2M usr already registered ...
+br-lan: port 3(wl1) entered disabled state
+device wl1 left promiscuous mode
+br-lan: port 3(wl1) entered disabled state
+CSIMON:  CSIMON[1.1.0] Initialization
+CSIMON: M2M usr already registered ...
+net_ratelimit: 5 callbacks suppressed
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_add_virtual_iface :
+Recvd application provided mac address:92:c7:50:db:66:93
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CFG80211-ERROR) wl_cfg80211_event :
+Event handler is not created
+CSIMON:  CSIMON[1.1.0] Initialization
+CSIMON: M2M usr already registered ...
+br-lan: port 2(wl0) entered blocking state
+br-lan: port 2(wl0) entered disabled state
+device wl0 entered promiscuous mode
+br-lan: port 2(wl0) entered blocking state
+br-lan: port 2(wl0) entered listening state
+br-lan: port 3(wl1) entered blocking state
+br-lan: port 3(wl1) entered disabled state
+device wl1 entered promiscuous mode
+br-lan: port 3(wl1) entered blocking state
+br-lan: port 3(wl1) entered listening state
+br-lan: port 4(wl1.1) entered blocking state
+br-lan: port 4(wl1.1) entered disabled state
+device wl1.1 entered promiscuous mode
+br-lan: port 4(wl1.1) entered blocking state
+br-lan: port 4(wl1.1) entered listening state
+br-lan: port 2(wl0) entered learning state
+br-lan: port 3(wl1) entered learning state
+br-lan: port 4(wl1.1) entered learning state
+br-lan: port 3(wl1) entered forwarding state
+br-lan: topology change detected, propagating
+br-lan: port 2(wl0) entered forwarding state
+br-lan: topology change detected, propagating
+br-lan: port 4(wl1.1) entered forwarding state
+br-lan: topology change detected, propagating
+CSIMON:  CSIMON[1.1.0] Initialization
+CSIMON: M2M usr already registered ...
+CSIMON:  CSIMON[1.1.0] Initialization
+CSIMON: M2M usr already registered ...
+net_ratelimit: 3 callbacks suppressed
+CFG80211-ERROR) wl_cfg80211_add_virtual_iface :
+Recvd application provideBusyBox v1.33.1 () built-in shell (ash)
