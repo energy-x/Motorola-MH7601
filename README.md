@@ -7,6 +7,7 @@ root@MH7601:/usr/bin# uname -a
 Linux MH7601 4.19.151 #1 SMP PREEMPT Mon Sep 20 17:22:16 EDT 2021 armv7l GNU/Linux
 
 ubus:
+<code>
 root@MH7601:/usr/bin# ubus call system board
 {
         "kernel": "4.19.151",
@@ -22,3 +23,4 @@ root@MH7601:/usr/bin# ubus call system board
                 "description": "OpenWrt 2.0.0.224 e35b5f7"
         }
 }
+</code>
