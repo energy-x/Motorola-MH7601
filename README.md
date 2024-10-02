@@ -1,4 +1,4 @@
-# Motorola-MH7601
+# Motorola MH7601 (MH7603)
 To access factory OpenWrt luci admin pages go to <code>https://[device-ip]/cgi-bin/luci/admin/minim/enable_admin</code>
 
 Log in using <code>username 'root'</code> and the wifi password printed on the bottom of the case.
