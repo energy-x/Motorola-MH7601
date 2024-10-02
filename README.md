@@ -1,11 +1,13 @@
 # Motorola-MH7601
 To access factory OpenWrt luci admin pages go to <code>https://[device-ip]/cgi-bin/luci/admin/minim/enable_admin</code>
+
 Log in using <code>username 'root'</code> and the wifi password printed on the bottom of the case.
 You will get an error message, but can now access and configure everything.
 
 Known issue: If you go to the System>Startup menu it will crash and reboot. You'll have to configure services through the command line.
 
 Enable ssh: <code>https://[device-ip]/cgi-bin/luci/admin/minim/start_sshd</code>
+
 Log in using <code>username 'root'</code> and the wifi password printed on the bottom of the case.
 You will get an error message, but can now access via ssh.
 
