@@ -5,8 +5,9 @@ I know this is a Broadcom device, but I picked up a set of 3 for $10 at Amazon t
 After gaining serial console access I was able to mount_root and run passwd to change the root password for full device access.
 
 I also found that there are a couple URLs under luci that will trigger enabling sshd and full access to luci.
-/cgi-bin/luci/admin/minim/enable_admin : after a log in will enable full luci
-/cgi-bin/luci/admin/minim/start_sshd : after a log in will enable a basic dropbear sshd
+
+<code>/cgi-bin/luci/admin/minim/enable_admin : after a log in will enable full luci
+/cgi-bin/luci/admin/minim/start_sshd : after a log in will enable a basic dropbear sshd</code>
 
 uname:
 <code>
