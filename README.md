@@ -36,3 +36,22 @@ root@MH7601:/usr/bin# ubus call system board
         }
 }
 </code>
+
+
+More information on disabling the call home:
+sajjoseph
+on Jan 18
+Here are some more details around what the system does. Current OS is configured to talk to minim.co site.
+
+support.minim.co,
+api.minim.co,
+my.minim.co,
+releases.minim.co,
+provision.minim.co
+Minim guys have their unum code published here.
+https://github.com/MinimSecure/unum-sdk?tab=readme-ov-file
+
+/usr/bin/unum --> This binary is talking to the minim.co site servers.
+You can see that there is another script - /usr/bin/unum_status_report.sh which checks /tmp/provision_info.json.
+I renamed /usr/bin/unum and noticed that the system is not making calls to the minim server anymore.
+Note that if you are managing your router instance through the mobile app, the above steps will break it. Hope you know what you are doing.
