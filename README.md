@@ -39,8 +39,9 @@ root@MH7601:/usr/bin# ubus call system board
 
 
 More information on disabling the call home:
-sajjoseph
-on Jan 18
+
+sajjoseph on Jan 18
+
 Here are some more details around what the system does. Current OS is configured to talk to minim.co site.
 
 support.minim.co,
