@@ -1,3 +1,6 @@
+Please see this project for OpenWrt progress: https://github.com/Vaibhav-Solanki/openwrt-motorola-mh7021
+
+
 # Motorola MH7601 (MH7603)
 To access factory OpenWrt luci admin pages go to <code>https://[device-ip]/cgi-bin/luci/admin/minim/enable_admin</code>
 
